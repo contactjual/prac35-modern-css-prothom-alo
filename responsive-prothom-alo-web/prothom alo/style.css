@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header .logo img {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+header .logo {
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation {
+    text-align: center;
+    border-bottom: 2px solid #a0a0a0;
+    padding: 3px 0;
+}
+.navigation ul {
+    list-style: none;
+    /* display: flex; */
+}
+.navigation ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 800;
+}
+.navigation ul li a:hover {
+    color: blue;
+}
+
+
+/* contant-style */
+
+.contant {
+    width: 1140px;
+    margin: 10px auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+}
+.main-contant {
+    flex-basis: 70%;
+    padding: 10px 2%;
+    border-right: 1px solid #ddd;
+    /* float: left; */
+    display: grid;
+    gap: 30px 10px;
+    grid-template-columns: auto auto auto;
+}
+.child-contant {
+    /* padding: 10px 1%; */
+    /* width: 30%; */
+    /* float: left; */
+    /* margin-right: 10px; */
+}
+.child-contant:first-child {
+    /* width: 63%; */
+    /* float: left; */
+    /* padding: 10px 1%; */
+    /* margin-right: 10px; */
+    grid-column: 1/3;
+    margin-bottom: 0;
+}
+.child-contant:first-child img {
+    float: right;
+}
+.child-contant:nth-child(2) img, 
+.child-contant:nth-child(3) img, 
+.child-contant:nth-child(4) img, 
+.child-contant:nth-child(5) img {
+    display: none;
+}
+.child-contant:nth-child(3) p,
+.child-contant:nth-child(4) p,
+.child-contant:nth-child(5) p{
+    display: none;
+}
+.child-contant img {    
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.child-contant h2 {
+    margin: 0 0 0 5px;
+    font-size: 18px;
+}
+.child-contant h2 a {
+    max-width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+/* sidebar-style */
+
+.main-sideber {
+    width: 21%;
+    /* float: right; */
+    padding: 10px 2%;
+}
+.child-sideber {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.child-sideber:last-child {
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+.child-sideber img {
+    max-width: 100%;
+}
+.child-sidebert h3 {
+    margin: 0 0 0 5px;
+    font-size: 18px;
+}
+.child-sideber h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
